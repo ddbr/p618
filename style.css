@@ -761,13 +761,20 @@ a:active {
 	max-width: 100%;
 }
 
-/* add format for secondary widget area */
-#secondary aside {
-	float: left;
-	width: 30%
+.widget ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
 }
-#secondary widget {
+
+/* add format for secondary widget area */
+#secondary {
+	background-color: #dfdfdf;
+}
+#secondary .widget {
+	float: left;
 	padding: 15px;
+	width: 30%;
 }
 
 /*--------------------------------------------------------------
