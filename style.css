@@ -775,7 +775,7 @@ a:active {
 #secondary .widget {
 	float: left;
 	padding: 15px;
-	width: 30%;
+	width: calc(100%/3);
 }
 #secondary .widget.widget_search {
     width: 100%;
