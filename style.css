@@ -771,15 +771,25 @@ a:active {
 #secondary {
 	background-color: #dfdfdf;
 	display: inline-block;
+	width: 100%;
 }
 #secondary .widget {
 	float: left;
 	padding: 15px;
+	width: 33.33%; /*fallback calc()*/
 	width: calc(100%/3);
 }
 #secondary .widget.widget_search {
-    width: 100%;
-    text-align: center;
+	margin-left: 33.33%; /*fallback calc()*/
+	margin-right: 33.33%; /*fallback calc()*/
+	margin-left: calc(100%/3);
+	margin-right: calc(100%/3);
+}
+#secondary .widget.widget_search .search-field{
+			width: calc(100% - 85px);
+}
+#secondary .widget.widget_search .search-submit{
+			width: 80px;
 }
 
 /*--------------------------------------------------------------
