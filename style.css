@@ -762,11 +762,11 @@ a:active {
 }
 
 /* add format for secondary widget area */
-.secondary aside {
+#secondary aside {
 	float: left;
 	width: 30%
 }
-.secondary widget {
+#secondary widget {
 	padding: 15px;
 }
 
