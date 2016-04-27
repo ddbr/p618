@@ -24,7 +24,7 @@ function p619_customize_register( $wp_customize ) {
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'sk_home_top_background_image',
 			array(
 				'settings'		=> 'corporate_logo',
-				'section'		=> 'header_image',
+				'section'		=> 'title_tagline',
 				'label'			=> __( 'Corporate Logo', 'theme-slug' ),
 				'description'	=> __( 'Select the logo Image for your Page', 'theme-slug' )
 	) ) );
