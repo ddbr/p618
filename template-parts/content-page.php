@@ -15,7 +15,7 @@
 		global $post;
 		$src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 5600,1000 ), false, '' );
 		?>
-		<div style="background: url(<?php echo $src[0]; ?> ) !important;">text </div>
+		<div class="featured-img" style="background-image: url(<?php echo $src[0]; ?> ) !important;">text </div>
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
