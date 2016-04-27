@@ -15,10 +15,18 @@ function p619_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
 
-	$wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize, 'image_control', array(
-	  'label' => __( 'Company Logo Image', 'theme_textdomain' ),
-	  'section' => 'header_image',
-	  'mime_type' => 'image',
+	$wp_customize->add_setting( 'corporate_logo',
+		array(
+			'sanitize_callback'	=> 'theme_slug_sanitize_image',
+			'transport'		=> 'postMessage'
+	) );
+
+	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'sk_home_top_background_image',
+			array(
+				'settings'		=> 'corporate_logo',
+				'section'		=> 'header_image',
+				'label'			=> __( 'Corporate Logo', 'theme-slug' ),
+				'description'	=> __( 'Select the logo Image for your Page', 'theme-slug' )
 	) ) );
 }
 add_action( 'customize_register', 'p619_customize_register' );
