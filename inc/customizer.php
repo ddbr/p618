@@ -17,7 +17,6 @@ function p619_customize_register( $wp_customize ) {
 
 	$wp_customize->add_setting( 'corporate_logo',
 		array(
-			'sanitize_callback'	=> 'theme_slug_sanitize_image',
 			'transport'		=> 'postMessage'
 	) );
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'corporate_logo',
