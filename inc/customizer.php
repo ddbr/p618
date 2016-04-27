@@ -20,8 +20,7 @@ function p619_customize_register( $wp_customize ) {
 			'sanitize_callback'	=> 'theme_slug_sanitize_image',
 			'transport'		=> 'postMessage'
 	) );
-
-	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'sk_home_top_background_image',
+	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'corporate_logo',
 			array(
 				'settings'		=> 'corporate_logo',
 				'section'		=> 'title_tagline',
