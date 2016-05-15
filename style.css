@@ -656,6 +656,7 @@ a:active {
 .main-navigation .current-menu-item > a,
 .main-navigation .current_page_ancestor > a,
 .main-navigation .current-menu-ancestor > a {
+	font-family: 'ITCDemi', sans-serif;
 }
 
 /* Small menu. */
@@ -859,6 +860,13 @@ a:active {
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
+}
+
+.featured-img {
+    height: 600px;
+    background-size: cover;
+    background-position-y: 25%;
+    background-position-x: 25%;
 }
 
 /*--------------------------------------------------------------
