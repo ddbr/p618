@@ -26,8 +26,14 @@
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<?php
+			$corporate_logo = get_theme_mod("corporate_logo", false);
+			if ( $corporate_logo ) : ?>
+				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			<?php else : ?>
+				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src=<?php echo $corporate_logo ?></a></h1>
+			<?php
+			endif;
 			echo get_theme_mod("corporate_logo");
 
 			$description = get_bloginfo( 'description', 'display' );
