@@ -28,7 +28,6 @@
 		<div class="site-branding">
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<?php
-			endif;
 			echo get_theme_mod("corporate_logo");
 
 			$description = get_bloginfo( 'description', 'display' );
