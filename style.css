@@ -577,9 +577,11 @@ a:active {
 ## Menus
 --------------------------------------------------------------*/
 .main-navigation {
-	display: block;
-	float: right;
 	width: 50%;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
 }
 
 .main-navigation ul {
@@ -989,6 +991,10 @@ object {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+.site-header {
+	position: relative;
+}
+
 img#corporate_logo {
 	max-width: 180px;
 }
