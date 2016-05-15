@@ -659,6 +659,26 @@ a:active {
 	font-family: 'ITCDemi', sans-serif;
 }
 
+/* Fixed header */
+header#masthead.fixed-header {
+		position: fixed;
+		width: 100%;
+		background-color: white;
+}
+
+.fixed-header img#corporate_logo {
+		max-height: 90px;
+}
+
+.fixed-header .site-branding {
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+}
+
+.fixed-header .main-navigation li {
+		margin-top: 44px;
+}
+
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
