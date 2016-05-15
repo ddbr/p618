@@ -28,7 +28,7 @@
 		<div class="site-branding">
 			<?php
 			$corporate_logo = get_theme_mod("corporate_logo", false);
-			if ( $corporate_logo ) : ?>
+			if ( ! $corporate_logo ) : ?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<?php else : ?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src=<?php echo $corporate_logo ?></a></h1>
