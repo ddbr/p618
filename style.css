@@ -992,3 +992,7 @@ object {
 img#corporate_logo {
 	max-width: 180px;
 }
+
+.site-branding {
+    float: left;
+}
