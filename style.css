@@ -577,10 +577,9 @@ a:active {
 ## Menus
 --------------------------------------------------------------*/
 .main-navigation {
-	clear: both;
 	display: block;
-	float: left;
-	width: 100%;
+	float: right;
+	width: 50%;
 }
 
 .main-navigation ul {
@@ -593,10 +592,20 @@ a:active {
 .main-navigation li {
 	float: left;
 	position: relative;
+	margin-left:1em;
+	margin-top: 2em;
+}
+
+.main-navigation li:first-child:before {
+	content: ""
+}
+
+.main-navigation li:before {
+	content: "|";
+	margin-right: 1em;
 }
 
 .main-navigation a {
-	display: block;
 	text-decoration: none;
 }
 
