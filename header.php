@@ -33,7 +33,6 @@
 				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 			<?php
 			endif;
-			<?php
 			echo get_theme_mod('corporate_logo');
 
 			$description = get_bloginfo( 'description', 'display' );
