@@ -578,10 +578,7 @@ a:active {
 --------------------------------------------------------------*/
 .main-navigation {
 	width: 50%;
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	bottom: 0px;
+	float: right;
 }
 
 .main-navigation ul {
@@ -595,7 +592,7 @@ a:active {
 	float: left;
 	position: relative;
 	margin-left:1em;
-	margin-top: 2em;
+	margin-top: 89px;
 }
 
 .main-navigation li:first-child:before {
@@ -1001,4 +998,10 @@ img#corporate_logo {
 
 .site-branding {
     float: left;
+    margin-left: 5%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.site-title {
+		margin: 0px 0px 0px 0px;
 }
