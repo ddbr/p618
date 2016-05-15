@@ -996,7 +996,7 @@ object {
 }
 
 img#corporate_logo {
-	max-width: 180px;
+	max-height: 150px;
 }
 
 .site-branding {
