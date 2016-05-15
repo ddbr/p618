@@ -34,7 +34,6 @@
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo $corporate_logo ?>" id="corporate_logo"></a></h1>
 			<?php
 			endif;
-			echo get_theme_mod("corporate_logo");
 
 			$description = get_bloginfo( 'description', 'display' );
 			if ( $description || is_customize_preview() ) : ?>
