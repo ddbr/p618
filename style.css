@@ -395,7 +395,7 @@ q {
 }
 
 hr {
-	background-color: #ccc;
+	background-color: #404040;
 	border: 0;
 	height: 1px;
 	margin-bottom: 1.5em;
@@ -551,17 +551,17 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: #404040;
 }
 
 a:visited {
-	color: purple;
+	color: #404040;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: midnightblue;
+	color: 404040;
 }
 
 a:focus {
