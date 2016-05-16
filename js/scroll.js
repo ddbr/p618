@@ -22,6 +22,9 @@
  }, 1000);
 
 $('#masthead').bind('switch-header',function() {
-  //$('.site-header').addClass('fixed-header')
-  console.log('scrolling');
+  if(this.scrolltop() > 50){
+    $( this ).addClass('fixed-header');
+  } else {
+    $( this ).removeClass('fixed-header');
+  }
 });
