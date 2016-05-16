@@ -116,6 +116,8 @@ function p619_scripts() {
 
 	wp_enqueue_script( 'p619-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
+	wp_enqueue_script('jquery', false, array(), false, false);
+	
 	wp_enqueue_script( 'p619-scrolling', get_template_directory_uri() . '/js/scroll.js', array( 'jquery' ), '20160516', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
