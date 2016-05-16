@@ -19,7 +19,7 @@
          didScroll = false;
          $('#masthead').trigger('switch-header');
      }
- }, 1000);
+ }, 100);
 
 $('#masthead').bind('switch-header',function() {
   if($( document ).scrollTop() > 45){
