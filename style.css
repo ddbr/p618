@@ -139,7 +139,8 @@ dfn {
 
 h1 {
 	font-size: 2em;
-	margin: 0.67em 10%;
+	margin-top: 0.67em;
+	margin-bottom: 0.67em;
 }
 
 mark {
@@ -307,6 +308,8 @@ h5,
 h6 {
 	font-family: 'ITCDemi', sans-serif;
 	clear: both;
+	margin-left: 10%;
+	margin-right: 10%;
 }
 
 p {
@@ -887,6 +890,10 @@ header#masthead.fixed-header {
     background-size: cover;
     background-position-y: 25%;
     background-position-x: 25%;
+}
+
+.entry-meta, .entry-footer {
+		margin: 0 10%;
 }
 
 /*--------------------------------------------------------------
