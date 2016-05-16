@@ -23,8 +23,10 @@
 
 $('#masthead').bind('switch-header',function() {
   if($( document ).scrollTop() > 45){
+    $("#content").css('margin-top',$("#content").offset().top);
     $( this ).addClass('fixed-header');
   } else {
+    $("#content").css('margin-top',0);
     $( this ).removeClass('fixed-header');
   }
 });
