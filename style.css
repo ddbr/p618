@@ -671,17 +671,24 @@ header#masthead.fixed-header {
 		background-color: white;
 }
 
+img#corporate_logo, .site-branding, .main-navigation li {
+		transition: 0.5s, ease;
+}
+
 .fixed-header img#corporate_logo {
 		max-height: 90px;
+		transition: 0.5s, ease;
 }
 
 .fixed-header .site-branding {
 		margin-top: 0.5em;
 		margin-bottom: 0.5em;
+		transition: 0.5s, ease;
 }
 
 .fixed-header .main-navigation li {
 		margin-top: 44px;
+		transition: 0.5s, ease;
 }
 
 /* Small menu. */
