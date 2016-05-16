@@ -22,7 +22,7 @@
  }, 1000);
 
 $('#masthead').bind('switch-header',function() {
-  if(this.scrolltop() > 50){
+  if($( this ).scrolltop() > 50){
     $( this ).addClass('fixed-header');
   } else {
     $( this ).removeClass('fixed-header');
