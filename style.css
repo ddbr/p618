@@ -662,35 +662,6 @@ a:active {
 	font-family: 'ITCDemi', sans-serif;
 }
 
-/* Fixed header */
-header#masthead.fixed-header {
-		position: fixed;
-		top: 0px;
-		left: 0px;
-		width: 100%;
-		background-color: white;
-}
-
-img#corporate_logo, .site-branding, .main-navigation li {
-		transition: 0.5s, ease;
-}
-
-.fixed-header img#corporate_logo {
-		max-height: 90px;
-		transition: 0.5s, ease;
-}
-
-.fixed-header .site-branding {
-		margin-top: 0.5em;
-		margin-bottom: 0.5em;
-		transition: 0.5s, ease;
-}
-
-.fixed-header .main-navigation li {
-		margin-top: 44px;
-		transition: 0.5s, ease;
-}
-
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
@@ -1040,10 +1011,6 @@ object {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-.site-header {
-	position: relative;
-}
-
 img#corporate_logo {
 	max-height: 150px;
 }
@@ -1056,4 +1023,33 @@ img#corporate_logo {
 }
 .site-title {
 		margin: 0px 0px 0px 0px;
+}
+
+/* Fixed header */
+header#masthead {
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		background-color: white;
+}
+
+img#corporate_logo, .site-branding, .main-navigation li {
+		transition: 0.5s, ease;
+}
+
+.fixed-header img#corporate_logo {
+		max-height: 90px;
+		transition: 0.5s, ease;
+}
+
+.fixed-header .site-branding {
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+		transition: 0.5s, ease;
+}
+
+.fixed-header .main-navigation li {
+		margin-top: 44px;
+		transition: 0.5s, ease;
 }
