@@ -10,6 +10,7 @@
 
  function doThisStuffOnScroll() {
      didScroll = true;
+     console.log('You scrolledxxxxx');
  }
 
  setInterval(function() {
