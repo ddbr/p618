@@ -23,10 +23,11 @@
 
 $('#masthead').bind('switch-header',function() {
   if($( document ).scrollTop() > 45){
-    $("#content").css('margin-top',$("#content").offset().top);
+    var y_off = $("#content").offset().top;
+    $("#content").css('margin-top', y_off );
     $( this ).addClass('fixed-header');
   } else {
-    $("#content").css('margin-top',0);
     $( this ).removeClass('fixed-header');
+    $("#content").css('margin-top',0);
   }
 });
