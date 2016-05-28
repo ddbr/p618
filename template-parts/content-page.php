@@ -12,11 +12,13 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php
-		global $post;
-		$src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 5600,1000 ), false, '' );
+		if ( has_post_thumbnail() ) {
+			global $post;
+			$src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 5600,1000 ), false, '' );
+			echo "<div class="featured-img" style="background-image: url(<?php echo $src[0]; ?> ) !important;">&nbsp;</div>";
+		}
+		the_title( '<h1 class="entry-title">', '</h1>' );
 		?>
-		<div class="featured-img" style="background-image: url(<?php echo $src[0]; ?> ) !important;">&nbsp;</div>
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
