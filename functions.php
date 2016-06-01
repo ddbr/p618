@@ -108,7 +108,7 @@ add_action( 'widgets_init', 'p619_widgets_init' );
 
 function solus_siteorigin_panels_css_object($css, $panels_data, $post_id){
     foreach ( $panels_data['grids'] as $gi => $grid ) {
-        $css->add_row_css($post_id, $gi, '', array(
+        $css->add_cell_css($post_id, $gi, '', array(
             'margin-left' => '-10px',
             'margin-right' => '-10px'
         ));
