@@ -106,6 +106,16 @@ function p619_widgets_init() {
 }
 add_action( 'widgets_init', 'p619_widgets_init' );
 
+function p619_siteorigin_panels_css_object($css, $panels_data, $post_id){
+    $css->add_row_css($post_id,$panels_data,'', array(
+        'padding-left' =>'0px',
+        'padding-right' =>'0px',
+				'margin-left' => '0px',
+				'margin-right' => '0px',
+    ));
+}
+add_filter('siteorigin_panels_css_object','p619_siteorigin_panels_css_object', 10, 3);
+
 /**
  * Enqueue scripts and styles.
  */
