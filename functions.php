@@ -113,6 +113,7 @@ function p619_siteorigin_panels_css_object($css, $panels_data, $post_id){
 				'margin-left' => '0px',
 				'margin-right' => '0px'
     ));
+		return $css->get_css();
 }
 add_filter('siteorigin_panels_css_object','p619_siteorigin_panels_css_object', 10, 3);
 
