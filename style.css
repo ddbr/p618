@@ -97,6 +97,11 @@ summary {
 	display: block;
 }
 
+div .content-area {
+/*    margin-left: 10%;
+    margin-right: 10%;*/
+}
+
 audio,
 canvas,
 progress,
