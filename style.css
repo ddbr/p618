@@ -598,13 +598,17 @@ a:active {
 	margin-top: 89px;
 }
 
-.main-navigation li:first-child:before {
+.main-navigation li:last-child:after {
 	content: ""
 }
 
-.main-navigation li:before {
+.main-navigation li:after {
 	content: "|";
-	margin-right: 1em;
+	margin-left: 1em;
+}
+
+.main-navigation li:first-child {
+    margin-left: 0;
 }
 
 .main-navigation a {
@@ -1027,6 +1031,7 @@ img#corporate_logo {
 
 /* Fixed header */
 header#masthead {
+		z-index: 99999;
 		position: fixed;
 		top: 0px;
 		left: 0px;
