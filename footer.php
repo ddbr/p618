@@ -9,16 +9,11 @@
  * @package p619
  */
 $footer_text = get_theme_mod("footer_text", false);
-if ( ! $footer_text ) {
-	$footer_text = preg_replace(
-              "~[[:alpha:]]+://[^<>[:space:]]+[[:alnum:]/]~",
-              "<a href=\"\\0\">\\0</a>",
-              $footer_text);
+$url_pattern = "~[[:alpha:]]+://[^<>[:space:]]+[[:alnum:]/]~";
+$footer_text = preg_replace($mail_pattern, '<a href=\"\\0\">\\0</a>', $footer_text);
+$mail_pattern = "/([A-z0-9_-]+\@[A-z0-9_-]+\.)([A-z0-9\_\-\.]{1,}[A-z])/";
+$footer_text = preg_replace($mail_pattern, '<a href="mailto:$1$2">$1$2</a>', $footer_text);
 
-	$mail_pattern = "/([A-z0-9_-]+\@[A-z0-9_-]+\.)([A-z0-9\_\-\.]{1,}[A-z])/";
-  $footer_text = preg_replace($mail_pattern, '<a href="mailto:$1$2">$1$2</a>', $footer_text);
-	echo $footer_text;
-}
 ?>
 
 </div><!-- #content -->
