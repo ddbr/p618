@@ -17,7 +17,7 @@ if ( ! $footer_text ) {
 
 	$footer_text = preg_replace(
               "/(\S+@\S+\.\S+)/",
-              "<a href="mailto:$1">$1</a>", 
+              "<a href=mailto:$1>$1</a>", 
               $footer_text);
 }
 ?>
