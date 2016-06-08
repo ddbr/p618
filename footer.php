@@ -17,7 +17,7 @@ if ( ! $footer_text ) {
 
 </div><!-- #content -->
 
-<p><?php= echo $footer_text ?></p>
+<p><?php echo $footer_text; ?></p>
 
 </div><!-- #page -->
 
