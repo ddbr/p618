@@ -20,8 +20,8 @@ $footer_text = preg_replace($mail_pattern, '<a href="mailto:$1$2">$1$2</a>', $fo
 
 </div><!-- #page -->
 
-<p><?php echo $footer_text; ?></p>
-<?php wp_footer(); ?>
+<div class="footer"><?php echo $footer_text; ?></div>
 
+<?php wp_footer(); ?>
 </body>
 </html>

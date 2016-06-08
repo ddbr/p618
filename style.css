@@ -885,6 +885,10 @@ a:active {
 		margin: 0 10%;
 }
 
+.entry-footer .edit-link {
+		display: none;
+}
+
 ol.comment-list {
     margin-top: 0;
     margin-left: 10%;
@@ -1066,4 +1070,13 @@ img#corporate_logo, .site-branding, .main-navigation li {
 .fixed-header .main-navigation li {
 		margin-top: 44px;
 		transition: 0.5s, ease;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+.footer {
+	text-align: center;
+	margin: 1.5em 10%;
 }
