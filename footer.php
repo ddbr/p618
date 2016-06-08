@@ -8,7 +8,7 @@
  *
  * @package p619
  */
-$footer_string = get_theme_mod("footer_text", false);
+$footer_text = get_theme_mod("footer_text", false);
 if ( ! $footer_text ) {
 
 }
