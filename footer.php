@@ -10,18 +10,24 @@
  */
 $footer_text = get_theme_mod("footer_text", false);
 if ( ! $footer_text ) {
+	$footer_text = preg_replace(
+              "~[[:alpha:]]+://[^<>[:space:]]+[[:alnum:]/]~",
+              "<a href=\"\\0\">\\0</a>",
+              $footer_text);
 
+	$footer_text = preg_replace(
+              "/(\S+@\S+\.\S+)/",
+              "<a href="mailto:$1">$1</a>", 
+              $footer_text);
 }
-
 ?>
 
 </div><!-- #content -->
 
-<p><?php echo $footer_text; ?></p>
-
 </div><!-- #page -->
 
-<!--php wp_footer(); -->
+<p><?php echo $footer_text; ?></p>
+<?php wp_footer(); ?>
 
 </body>
 </html>
