@@ -13,7 +13,7 @@
      didScroll = true;
  }
 
- // Scrolling check interval function 1000ms
+ // Scrolling check interval function 100ms
  setInterval(function() {
      if(didScroll) {
          didScroll = false;
@@ -28,3 +28,7 @@ $('#masthead').bind('switch-header',function() {
     $( this ).removeClass('fixed-header');
   }
 });
+
+
+var img_height = $( window ).height() - $(".featured-img").offset().top;
+$(".featured-img").height(img_height);
