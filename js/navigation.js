@@ -16,7 +16,7 @@
 	if ( 'undefined' === typeof button ) {
 		return;
 	}
-	button_open = document.getElementById( 'button-open' );
+	button_open = document.getElementById( 'open-menu' );
 	if ( 'undefined' === typeof button ) {
 		return;
 	}
