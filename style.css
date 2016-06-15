@@ -591,7 +591,6 @@ a:active {
 }
 
 .main-navigation ul {
-	display: none;
 	list-style: none;
 	margin: 0;
 	padding-left: 0;
@@ -1062,6 +1061,9 @@ header#masthead {
 		background-color: white;
 		text-align: center;
 		opacity: 0.93;
+}
+header#masthead toggled {
+		display: none;
 }
 
 ul#primary-menu:after {

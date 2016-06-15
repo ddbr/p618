@@ -7,7 +7,7 @@
 ( function() {
 	var container, button, menu, links, subMenus, i, len;
 
-	container = document.getElementById( 'site-navigation' );
+	container = document.getElementById( 'masthead' ); /* main-navigation */
 	if ( ! container ) {
 		return;
 	}
