@@ -1062,7 +1062,7 @@ header#masthead {
 		text-align: center;
 		opacity: 0.93;
 }
-header#masthead toggled {
+header#masthead.toggled {
 		display: none;
 }
 
