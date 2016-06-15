@@ -676,7 +676,7 @@ a:active {
 	font-family: 'ITCDemi', sans-serif;
 }
 
-/* Small menu. */
+/* Small menu. *//*
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
@@ -690,6 +690,7 @@ a:active {
 		display: block;
 	}
 }
+*/
 
 .site-main .comment-navigation,
 .site-main .posts-navigation,
