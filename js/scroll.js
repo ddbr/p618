@@ -42,7 +42,6 @@ $("#masthead").bind('scrolled', function() {
   	if ( ! container ) {
   		return;
   	}
-
   	button = container.getElementsByTagName( 'button' )[0];
   	if ( 'undefined' === typeof button ) {
   		return;
@@ -51,6 +50,7 @@ $("#masthead").bind('scrolled', function() {
   	if ( 'undefined' === typeof button ) {
   		return;
   	}
+    menu = container.getElementsByTagName( 'ul' )[0];
 
     container.className = container.className.replace( ' toggled', '' );
     button_open.className = button_open.className.replace( ' toggled', '' );
