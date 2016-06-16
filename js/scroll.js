@@ -38,7 +38,10 @@ $(".featured-img").bind('resize', function() {
 });
 
 $("#masthead").bind('scrolled', function() {
-  if( !$( this ).hasClass('toggled') && scrollCnt > 8 ){
+  if( scrollCnt < 4) {
+    scrollCnt++;
+  }
+  if( !$( this ).hasClass('toggled') && scrollCnt > 4 ){
     container = document.getElementById( 'masthead' ); /* main-navigation */
   	if ( ! container ) {
   		return;
@@ -58,7 +61,5 @@ $("#masthead").bind('scrolled', function() {
     button.setAttribute( 'aria-expanded', 'true' );
     menu.setAttribute( 'aria-expanded', 'true' );
     scrollCnt = 0;
-  } else {
-    scrollCnt++;
   }
 });
