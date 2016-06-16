@@ -36,11 +36,11 @@ $(".featured-img").bind('resize', function() {
   $(".featured-img").height(img_height);
 });
 
-$("#masthead").bind('scrolled' function() {
+$("#masthead").bind('scrolled', function() {
   if( !$( this ).hasClass('toggled') ){
     container.className = container.className.replace( ' toggled', '' );
     button_open.className = button_open.className.replace( ' toggled', '' );
     button.setAttribute( 'aria-expanded', 'false' );
-    menu.setAttribute( 'aria-expanded', 'false' );    
+    menu.setAttribute( 'aria-expanded', 'false' );
   }
 });
