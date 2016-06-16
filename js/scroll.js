@@ -38,7 +38,7 @@ $(".featured-img").bind('resize', function() {
 });
 
 $("#masthead").bind('scrolled', function() {
-  if( !$( this ).hasClass('toggled') && scrollCnt > 4 ){
+  if( !$( this ).hasClass('toggled') && scrollCnt > 8 ){
     container = document.getElementById( 'masthead' ); /* main-navigation */
   	if ( ! container ) {
   		return;
