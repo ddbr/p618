@@ -38,6 +38,20 @@ $(".featured-img").bind('resize', function() {
 
 $("#masthead").bind('scrolled', function() {
   if( !$( this ).hasClass('toggled') ){
+    container = document.getElementById( 'masthead' ); /* main-navigation */
+  	if ( ! container ) {
+  		return;
+  	}
+
+  	button = container.getElementsByTagName( 'button' )[0];
+  	if ( 'undefined' === typeof button ) {
+  		return;
+  	}
+  	button_open = document.getElementById( 'open-menu' );
+  	if ( 'undefined' === typeof button ) {
+  		return;
+  	}
+
     container.className = container.className.replace( ' toggled', '' );
     button_open.className = button_open.className.replace( ' toggled', '' );
     button.setAttribute( 'aria-expanded', 'false' );
