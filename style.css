@@ -1,7 +1,7 @@
 /*
 Theme Name: p619
 Theme URI: http://underscores.me/
-Author: Daniel Bräker
+Author: Daniel BrÃ¤ker
 Author URI: http://underscores.me/
 Description: Projekt 619 - a beatiful theme for a creative project
 Version: 1.0.0
@@ -602,14 +602,8 @@ a:active {
 	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/PjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDIyNC41MTIgMjI0LjUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjI0LjUxMiAyMjQuNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGc+PHBvbHlnb24gc3R5bGU9ImZpbGw6IzAxMDAwMjsiIHBvaW50cz0iMjI0LjUwNyw2Ljk5NyAyMTcuNTIxLDAgMTEyLjI1NiwxMDUuMjU4IDYuOTk4LDAgMC4wMDUsNi45OTcgMTA1LjI2MywxMTIuMjU0IDAuMDA1LDIxNy41MTIgNi45OTgsMjI0LjUxMiAxMTIuMjU2LDExOS4yNCAyMTcuNTIxLDIyNC41MTIgMjI0LjUwNywyMTcuNTEyIDExOS4yNDksMTEyLjI1NCAiLz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PC9zdmc+);
 }
 
-button#open-menu:hover:before, button#open-menu.toggled:before{
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    transform: rotate(90deg);
-    -webkit-transition: -webkit-transform 0.5s; /* Safari */
-    transition: transform 0.5s;
+button#open-menu:not(.toggled){
+	background-color: transparent;
 }
 
 button#open-menu{
@@ -631,8 +625,6 @@ button#open-menu:before{
 	background-position: center;
 	background-repeat: no-repeat;
 	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/PjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAzMDIgMzAyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzMDIgMzAyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGc+PHJlY3QgeT0iMzYiIHdpZHRoPSIzMDIiIGhlaWdodD0iMzAiLz48cmVjdCB5PSIyMzYiIHdpZHRoPSIzMDIiIGhlaWdodD0iMzAiLz48cmVjdCB5PSIxMzYiIHdpZHRoPSIzMDIiIGhlaWdodD0iMzAiLz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PC9zdmc+);
-	-webkit-transition: -webkit-transform 1s; /* Safari */
-    transition: transform 1s;
 }
 
 .main-navigation ul {
