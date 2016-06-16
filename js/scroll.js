@@ -52,9 +52,9 @@ $("#masthead").bind('scrolled', function() {
   	}
     menu = container.getElementsByTagName( 'ul' )[0];
 
-    container.className = container.className.replace( ' toggled', '' );
-    button_open.className = button_open.className.replace( ' toggled', '' );
-    button.setAttribute( 'aria-expanded', 'false' );
-    menu.setAttribute( 'aria-expanded', 'false' );
+    container.className += ' toggled';
+    button_open.className += ' toggled';
+    button.setAttribute( 'aria-expanded', 'true' );
+    menu.setAttribute( 'aria-expanded', 'true' );
   }
 });
