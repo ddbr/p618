@@ -23,7 +23,7 @@
  setInterval(function() {
      if(didScroll) {
          didScroll = false;
-         // scroll code
+         $('#masthead').trigger('scrolled');
      }
      if(didResize) {
          didResize = false;
@@ -34,4 +34,13 @@
 $(".featured-img").bind('resize', function() {
   var img_height = $( window ).height() - $(".featured-img").offset().top;
   $(".featured-img").height(img_height);
+});
+
+$("#masthead").bind('scrolled' function() {
+  if( !$( this ).hasClass('toggled') ){
+    container.className = container.className.replace( ' toggled', '' );
+    button_open.className = button_open.className.replace( ' toggled', '' );
+    button.setAttribute( 'aria-expanded', 'false' );
+    menu.setAttribute( 'aria-expanded', 'false' );    
+  }
 });
