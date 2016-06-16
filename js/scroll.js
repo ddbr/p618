@@ -7,6 +7,7 @@
  // scrolling check Variable
  var didScroll = false;
  var didResize = false;
+ var scrollCnt = 0;
 
  // scrolling event
  window.onscroll = flagOnScroll;
@@ -37,7 +38,7 @@ $(".featured-img").bind('resize', function() {
 });
 
 $("#masthead").bind('scrolled', function() {
-  if( !$( this ).hasClass('toggled') ){
+  if( !$( this ).hasClass('toggled') && scrollCnt < 4 ){
     container = document.getElementById( 'masthead' ); /* main-navigation */
   	if ( ! container ) {
   		return;
@@ -56,5 +57,8 @@ $("#masthead").bind('scrolled', function() {
     button_open.className += ' toggled';
     button.setAttribute( 'aria-expanded', 'true' );
     menu.setAttribute( 'aria-expanded', 'true' );
+    scrollCnt = 0;
+  } else {
+    scrollCnt++;
   }
 });
