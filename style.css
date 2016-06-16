@@ -1112,6 +1112,7 @@ header#masthead {
 		opacity: 0.93;
 		transition: opacity 2s;
 		visibility: visible;
+		transition: opacity 1s, visibility 0s;
 }
 header#masthead.toggled {
 		/* display: none; */
