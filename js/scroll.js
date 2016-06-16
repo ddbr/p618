@@ -25,8 +25,8 @@
          didScroll = false;
          // scroll code
      }
-     if(didScroll) {
-         didScroll = false;
+     if(didResize) {
+         didResize = false;
          $('.featured-img').trigger('resize');
      }
  }, 100);
