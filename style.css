@@ -922,7 +922,7 @@ button#open-menu:before{
     background-position-y: 25%;
     background-position-x: 25%;
 }
-img.featured-logo {
+.featured-logo {
     position: absolute;
     top: 0;
     left: 0;
