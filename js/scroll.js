@@ -38,7 +38,7 @@ $(".featured-img").bind('resize', function() {
 });
 
 $("#masthead").bind('scrolled', function() {
-  if( scrollCnt < 4) {
+  if( scrollCnt < 5) {
     scrollCnt++;
   }
   if( !$( this ).hasClass('toggled') && scrollCnt > 4 ){
