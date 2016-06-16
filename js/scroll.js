@@ -6,29 +6,32 @@
 
  // scrolling check Variable
  var didScroll = false;
+ var didResize = false;
 
  // scrolling event
- window.onscroll = doThisStuffOnScroll;
- function doThisStuffOnScroll() {
+ window.onscroll = flagOnScroll;
+ function flagOnScroll() {
      didScroll = true;
+ }
+ // resize event
+ window.onresize = flagOnResize;
+ function flagOnResize() {
+     didResize = true;
  }
 
  // Scrolling check interval function 100ms
  setInterval(function() {
      if(didScroll) {
          didScroll = false;
-         $('#masthead').trigger('switch-header');
+         // scroll code
+     }
+     if(didScroll) {
+         didScroll = false;
+         $('.featured-img').trigger('resize');
      }
  }, 100);
 
-$('#masthead').bind('switch-header',function() {
-  if($( document ).scrollTop() > 45){
-    $( this ).addClass('fixed-header');
-  } else {
-    $( this ).removeClass('fixed-header');
-  }
+$(".featured-img").bind('resize', function() {
+  var img_height = $( window ).height() - $(".featured-img").offset().top;
+  $(".featured-img").height(img_height);
 });
-
-
-var img_height = $( window ).height() - $(".featured-img").offset().top;
-$(".featured-img").height(img_height);
