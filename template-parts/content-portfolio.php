@@ -31,6 +31,7 @@
 				'after'  => '</div>',
 			) );
 		?>
+		<div class="down-arrow"></div>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
