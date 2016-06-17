@@ -20,6 +20,7 @@
 		echo "<div class='featured-logo' style='background-image: url( http://46.101.233.183/wp-content/uploads/2016/04/logo-p619.png ) !important;'>&nbsp;</div>";
 		//the_title( '<h1 class="entry-title">', '</h1>' );
 		?>
+		<div class="down-arrow"></div>		
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
@@ -31,7 +32,6 @@
 				'after'  => '</div>',
 			) );
 		?>
-		<div class="down-arrow"></div>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">

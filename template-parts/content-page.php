@@ -19,6 +19,7 @@
 		}
 		the_title( '<h1 class="entry-title">', '</h1>' );
 		?>
+		<div class="down-arrow"></div>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
