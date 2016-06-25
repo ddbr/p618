@@ -39,7 +39,7 @@
 $(".featured-img").bind('resize', function() {
   var img_height = $( window ).height() - $(".featured-img").offset().top;
   $(".featured-img").height(img_height);
-  $(".featured-img-archive-product").height(img_height / 2);
+  $(".featured-img .archive-product").height(img_height / 2);
 });
 
 $("#masthead").bind('scrolled', function() {
