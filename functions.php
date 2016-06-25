@@ -63,18 +63,14 @@ function p619_setup() {
 	 * See https://developer.wordpress.org/themes/functionality/post-formats/
 	 */
 	// register custom post type 'my_custom_post_type'
-	add_action( 'init', 'create_product_post_type' );
-	function create_product_post_type() {
-	    register_post_type( 'featured_product',
+	register_post_type( 'featured_product',
 	      array(
 	        'labels' => array( 'name' => __( 'Products' ) ),
 	        'public' => true
-	    )
-	  );
-	}
+	    	));
+
 	//add post-formats to post_type 'my_custom_post_type'
 	add_post_type_support( 'featured_product', 'post-formats' );
-
 
 	add_theme_support( 'post-formats', array(
 		'featured_product'
