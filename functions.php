@@ -75,9 +75,9 @@ function p619_setup() {
 	//add post-formats to post_type 'my_custom_post_type'
 	add_post_type_support( 'my_custom_post_type', 'post-formats' );
 
-	add_theme_support( 'post-formats', array(
+	/*add_theme_support( 'post-formats', array(
 		'featured_product'
-	) );
+	) );*/
 
 	// Set up the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( 'p619_custom_background_args', array(
