@@ -90,7 +90,7 @@ function p619_setup() {
 	//add post-formats to post_type 'my_custom_post_type'
 	add_post_type_support( 'featured_product', 'post-formats' );*/
 
-	add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link', 'featured_product' ) );
+	//add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link') );
 
 	// Set up the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( 'p619_custom_background_args', array(
@@ -150,6 +150,11 @@ function p619_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'p619_scripts' );
+
+add_action( 'after_setup_theme', 'woocommerce_support' );
+function woocommerce_support() {
+    add_theme_support( 'woocommerce' );
+}
 
 require get_template_directory() . '/inc/custom-header.php';
 
