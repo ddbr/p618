@@ -64,7 +64,7 @@ function p619_setup() {
 	 */
 	// register custom post type 'my_custom_post_type'
 	// Set UI labels for Product Post Type
-		$labels = array(
+	/*	$labels = array(
 			'name'                => _x( 'Featured Products', 'Post Type General Name', 'p619' ),
 			'singular_name'       => _x( 'Featured Product', 'Post Type Singular Name', 'p619' ),
 			'menu_name'           => __( 'Products', 'p619' ),
@@ -88,7 +88,7 @@ function p619_setup() {
 	    	));
 
 	//add post-formats to post_type 'my_custom_post_type'
-	add_post_type_support( 'featured_product', 'post-formats' );
+	add_post_type_support( 'featured_product', 'post-formats' );*/
 
 	add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link', 'featured_product' ) );
 
