@@ -20,15 +20,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 get_header( 'shop' ); ?>
 
-	<?php
-		/**
-		 * woocommerce_before_main_content hook.
-		 *
-		 * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
-		 * @hooked woocommerce_breadcrumb - 20
-		 */
-		do_action( 'woocommerce_before_main_content' );
-	?>
   <header class="entry-header">
     <?php
     if ( has_post_thumbnail() ) {
@@ -44,6 +35,16 @@ get_header( 'shop' ); ?>
 		<?php endif; ?>
     <div class="down-arrow"></div>
   </header><!-- .entry-header -->
+
+		<?php
+			/**
+			 * woocommerce_before_main_content hook.
+			 *
+			 * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
+			 * @hooked woocommerce_breadcrumb - 20
+			 */
+			do_action( 'woocommerce_before_main_content' );
+		?>
 
 		<?php
 			/**
