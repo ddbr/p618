@@ -946,6 +946,11 @@ header.entry-header .down-arrow {
     width: 100%;
     -webkit-filter: invert(100%);
 }
+header.entry-header .down-arrow:hover, header.entry-header .down-arrow.jump {
+	bottom: -5px;
+	transition: bottom 0.3s;
+}
+
 
 .entry-meta, .entry-footer {
 		margin: 0 10%;
