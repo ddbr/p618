@@ -27,7 +27,7 @@ get_header( 'shop' ); ?>
 			$cat_id = $wp_query->get_queried_object_id();
       $thumbnail_id = get_woocommerce_term_meta( $cat_id, 'thumbnail_id', true );
       $src = wp_get_attachment_url( $thumbnail_id );
-      echo "<div class='featured-img' style='background-image: url( " . $src . " ) !important;'>&nbsp;</div>";
+      echo "<div class='featured-img-archive-product' style='background-image: url( " . $src . " ) !important;'>&nbsp;</div>";
     }
     ?>
     <?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
