@@ -72,6 +72,25 @@ function p619_setup() {
 	//add post-formats to post_type 'my_custom_post_type'
 	add_post_type_support( 'featured_product', 'post-formats' );
 
+	// Our custom post type function
+	function create_posttype() {
+
+		register_post_type( 'movies',
+		// CPT Options
+			array(
+				'labels' => array(
+					'name' => __( 'Movies' ),
+					'singular_name' => __( 'Movie' )
+				),
+				'public' => true,
+				'has_archive' => true,
+				'rewrite' => array('slug' => 'movies'),
+			)
+		);
+	}
+	// Hooking up our function to theme setup
+	add_action( 'init', 'create_posttype' );
+
 	// Set up the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( 'p619_custom_background_args', array(
 		'default-color' => 'ffffff',
