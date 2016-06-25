@@ -63,33 +63,34 @@ function p619_setup() {
 	 * See https://developer.wordpress.org/themes/functionality/post-formats/
 	 */
 	// register custom post type 'my_custom_post_type'
+	// Set UI labels for Product Post Type
+		$labels = array(
+			'name'                => _x( 'Featured Products', 'Post Type General Name', 'p619' ),
+			'singular_name'       => _x( 'Featured Product', 'Post Type Singular Name', 'p619' ),
+			'menu_name'           => __( 'Products', 'p619' ),
+			'parent_item_colon'   => __( 'Parent Product', 'p619' ),
+			'all_items'           => __( 'All Products', 'p619' ),
+			'view_item'           => __( 'View Product', 'p619' ),
+			'add_new_item'        => __( 'Add New Product', 'p619' ),
+			'add_new'             => __( 'Add New', 'p619' ),
+			'edit_item'           => __( 'Edit Product', 'p619' ),
+			'update_item'         => __( 'Update Product', 'p619' ),
+			'search_items'        => __( 'Search Product', 'p619' ),
+			'not_found'           => __( 'Not Found', 'p619' ),
+			'not_found_in_trash'  => __( 'Not found in Trash', 'p619' ),
+		);
+
 	register_post_type( 'featured_product',
 	      array(
-	        'labels' => array( 'name' => __( 'Products' ) ),
+	        'label' => array( 'name' => __( 'Featured Product' ) ),
+					'label' => $labels,
 	        'public' => true
 	    	));
 
 	//add post-formats to post_type 'my_custom_post_type'
 	add_post_type_support( 'featured_product', 'post-formats' );
 
-	// Our custom post type function
-	function create_posttype() {
-
-		register_post_type( 'movies',
-		// CPT Options
-			array(
-				'labels' => array(
-					'name' => __( 'Movies' ),
-					'singular_name' => __( 'Movie' )
-				),
-				'public' => true,
-				'has_archive' => true,
-				'rewrite' => array('slug' => 'movies'),
-			)
-		);
-	}
-	// Hooking up our function to theme setup
-	add_action( 'init', 'create_posttype' );
+	add_theme_support( 'post-thumbnails', array( 'post', 'page', 'article', 'presentation', 'case-study', 'client', 'home-banner', 'people', 'solution', 'tool', 'service', 'associate' ) );
 
 	// Set up the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( 'p619_custom_background_args', array(
