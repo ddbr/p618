@@ -62,12 +62,21 @@ function p619_setup() {
 	 * Enable support for Post Formats.
 	 * See https://developer.wordpress.org/themes/functionality/post-formats/
 	 */
+	// register custom post type 'my_custom_post_type'
+	add_action( 'init', 'create_product_post_type' );
+	function create_product_post_type() {
+	    register_post_type( 'featured_product',
+	      array(
+	        'labels' => array( 'name' => __( 'Products' ) ),
+	        'public' => true
+	    )
+	  );
+	}
+	//add post-formats to post_type 'my_custom_post_type'
+	add_post_type_support( 'my_custom_post_type', 'post-formats' );
+
 	add_theme_support( 'post-formats', array(
-		'aside',
-		'image',
-		'video',
-		'quote',
-		'link',
+		'featured_product'
 	) );
 
 	// Set up the WordPress core custom background feature.
