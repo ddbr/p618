@@ -32,8 +32,9 @@ get_header( 'shop' ); ?>
   <header class="entry-header">
     <?php
     if ( has_post_thumbnail() ) {
-      global $post;
-      $thumbnail_id = get_woocommerce_term_meta( $cat->term_id, 'thumbnail_id', true );
+      global $wp_query;
+			$cat_id = $wp_query->get_queried_object_id();
+      $thumbnail_id = get_woocommerce_term_meta( $cat_id, 'thumbnail_id', true );
       $src = wp_get_attachment_url( $thumbnail_id );
       echo "<div class='featured-img' style='background-image: url( " . $src . " ) !important;'>&nbsp;</div>";
     }
