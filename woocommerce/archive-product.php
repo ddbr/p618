@@ -58,9 +58,11 @@ get_header( 'shop' ); ?>
 
 		<?php if ( have_posts() ) : ?>
 			<?php echo '<div class="product_preview">'; ?>
+				<?php echo '<div class="product_preview-button left"></div>'; ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 					<?php wc_get_template_part( 'content', 'product_preview' ); ?>
 				<?php endwhile; // end of the loop. ?>
+				<?php echo '<div class="product_preview-button right"></div>'; ?>
 			<?php echo '</div>'; ?>
 			<?php
 				/**

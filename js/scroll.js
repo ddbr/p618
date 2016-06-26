@@ -68,3 +68,9 @@ $("#masthead").bind('scrolled', function() {
     scrollCnt = 0;
   }
 });
+
+$(".product_preview-button").bind('resize', function() {
+  var x = $(window).width() / 6;
+  if ( $("this").hasClass( "left" ) ) { x = X * -1}
+  $("this").parent().scrollLeft( $("this").scrollLeft() + x )
+});
