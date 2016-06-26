@@ -1208,6 +1208,23 @@ nav.woocommerce-breadcrumb, form.woocommerce-ordering, .woocommerce-result-count
 		text-transform: uppercase;
 }
 
+.woocommerce .product_preview {
+    display: block;
+    white-space: nowrap;
+    width: 100%;
+    overflow: scroll;
+    height: 50vh;
+}
+
+a.woocommerce-LoopProduct-link {
+    display: inline-block;
+}
+
+img.attachment-shop_catalog.size-shop_catalog.wp-post-image {
+    width: 40vh;
+    margin: 5vh;
+}
+
 /*--------------------------------------------------------------
 # Admin Bar
 --------------------------------------------------------------*/
