@@ -1208,7 +1208,7 @@ nav.woocommerce-breadcrumb, form.woocommerce-ordering, .woocommerce-result-count
 		text-transform: uppercase;
 }
 
-.woocommerce .product_preview {
+.woocommerce .product_preview-container {
     display: block;
     white-space: nowrap;
     width: 100%;
