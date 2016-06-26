@@ -57,18 +57,11 @@ get_header( 'shop' ); ?>
 		?>
 
 		<?php if ( have_posts() ) : ?>
-a
-			<?php woocommerce_product_loop_start(); ?>
-
-				<?php woocommerce_product_subcategories(); ?>
 
 				<?php while ( have_posts() ) : the_post(); ?>
-
 					<?php wc_get_template_part( 'content', 'product_preview' ); ?>
-
 				<?php endwhile; // end of the loop. ?>
 
-			<?php woocommerce_product_loop_end(); ?>
 
 			<?php
 				/**
