@@ -26,7 +26,6 @@ global $product;
 if ( empty( $product ) || ! $product->is_visible() ) {
 	return;
 }
-?>
-
 
 do_action( 'woocommerce_before_shop_loop_item_title' );
+?>
