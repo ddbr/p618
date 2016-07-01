@@ -58,13 +58,13 @@ get_header( 'shop' ); ?>
 
 		<?php if ( have_posts() ) : ?>
 			<?php echo '<div class="product_preview">'; ?>
-				<?php echo '<div class="product_preview-button left"></div>'; ?>
+				<?php echo '<a href="#" class="product_preview-button left"></a>'; ?>
 				<?php echo '<div class="product_preview-container">'; ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 					<?php wc_get_template_part( 'content', 'product_preview' ); ?>
 				<?php endwhile; // end of the loop. ?>
 				<?php echo '</div>'; ?>
-				<?php echo '<div class="product_preview-button right"></div>'; ?>
+				<?php echo '<a href="#" class="product_preview-button right"></a>'; ?>
 			<?php echo '</div>'; ?>
 			<?php
 				/**

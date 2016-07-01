@@ -74,3 +74,16 @@ $(".product_preview-button").bind('resize', function() {
   if ( $("this").hasClass( "left" ) ) { x = X * -1}
   $("this").parent().scrollLeft( $("this").scrollLeft() + x )
 });
+
+$(".product_preview-button.right").on("click" ,function(){
+    var scrolled=$(".product_preview-container").scrollLeft() + 30;
+    $(".product_preview-container").animate({
+      scrollTop:  scrolled
+    });
+});
+$(".product_preview-button.left").on("click" ,function(){
+    var scrolled=$(".product_preview-container").scrollLeft() - 30;
+    $(".product_preview-container").animate({
+      scrollTop:  scrolled
+    });
+});
