@@ -8,6 +8,7 @@
  var didScroll = false;
  var didResize = false;
  var scrollCnt = 0;
+ var prdScroll = 0;
 
  // scrolling event
  window.onscroll = flagOnScroll;
@@ -76,14 +77,14 @@ $(".product_preview-button").bind('resize', function() {
 });
 
 $(".product_preview-button.right").on("click" ,function(){
-    var scrolled=$(".product_preview-container").scrollLeft() + $(window).height() / 4;
+    prdScroll = prdScroll + $(window).height() / 4;
     $(".product_preview-container").animate({
-      scrollLeft:  scrolled
+      scrollLeft:  prdScroll
     });
 });
 $(".product_preview-button.left").on("click" ,function(){
-    var scrolled=$(".product_preview-container").scrollLeft() - $(window).height() / 4;
+    prdScroll = prdScroll - $(window).height() / 4;
     $(".product_preview-container").animate({
-      scrollLeft:  scrolled
+      scrollLeft:  prdScroll
     });
 });
