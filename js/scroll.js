@@ -77,13 +77,13 @@ $(".product_preview-button").bind('resize', function() {
 });
 
 $(".product_preview-button.right").on("click" ,function(){
-    prdScroll = prdScroll + $(window).height() / 4;
+    prdScroll = prdScroll + $(window).height() / 2;
     $(".product_preview-container").animate({
       scrollLeft:  prdScroll
     });
 });
 $(".product_preview-button.left").on("click" ,function(){
-    prdScroll = prdScroll - $(window).height() / 4;
+    prdScroll = prdScroll - $(window).height() / 2;
     $(".product_preview-container").animate({
       scrollLeft:  prdScroll
     });
