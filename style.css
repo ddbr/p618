@@ -1221,8 +1221,40 @@ a.woocommerce-LoopProduct-link {
 }
 
 img.attachment-shop_catalog.size-shop_catalog.wp-post-image {
-    width: 40vh;
+    height: 45vh;
+		width: auto;
     margin: 5vh;
+}
+
+.product_preview {
+    position: relative;
+}
+
+.product_preview:hover .product_preview-button{
+    width: 6vh;
+    -webkit-transition: width 0.2s;
+    transition: width 0.2;
+}
+
+.product_preview-button.left {
+    left: 0px;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/PjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDE5Ny40MDIgMTk3LjQwMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTk3LjQwMiAxOTcuNDAyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGc+PGc+PGc+PHBvbHlnb24gc3R5bGU9ImZpbGw6IzAxMDAwMjsiIHBvaW50cz0iMTQ2Ljg4MywxOTcuNDAyIDQ1LjI1NSw5OC42OTggMTQ2Ljg4MywwIDE1Mi4xNDgsNS40MTggNTYuMTA5LDk4LjY5OCAxNTIuMTQ4LDE5MS45OCAiLz48L2c+PC9nPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48L3N2Zz4=);
+}
+.product_preview-button.right {
+    right: 0px;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/PjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDIyMy40MTMgMjIzLjQxMyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjIzLjQxMyAyMjMuNDEzOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGc+PGc+PGc+PHBvbHlnb24gc3R5bGU9ImZpbGw6IzAxMDAwMjsiIHBvaW50cz0iNTcuMTc5LDIyMy40MTMgNTEuMjI0LDIxNy4yNzYgMTU5LjkyNSwxMTEuNzEgNTEuMjI0LDYuMTI3IDU3LjE3OSwwIDE3Mi4xODksMTExLjcxICIvPjwvZz48L2c+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjwvc3ZnPg==);
+}
+.product_preview-button {
+    display: block;
+    position: absolute;
+    top: 0px;
+    width: 0vh;
+    -webkit-transition: width 0.1s;
+    transition: width 0.1s;
+    height: 100%;
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /*--------------------------------------------------------------
