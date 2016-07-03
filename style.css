@@ -1198,14 +1198,14 @@ img#corporate_logo {
 nav.woocommerce-breadcrumb, form.woocommerce-ordering, .woocommerce-result-count {
     display: none;
 }
-.woocommerce .entry-title {
+.woocommerce .entry-header .entry-title {
     margin: 0;
     position: absolute;
     top: 20vh;
     width: 100%;
     text-align: center;
     color: white;
-		text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 .woocommerce .product_preview-container {
@@ -1255,6 +1255,32 @@ img.attachment-shop_catalog.size-shop_catalog.wp-post-image {
     background-color: white;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.woocommerce .product {
+    display: none;
+}
+
+.woocommerce .summary.entry-summary {
+    display: block;
+}
+
+.woocommerce #content div.product div.images, .woocommerce div.product div.images, .woocommerce-page #content div.product div.images, .woocommerce-page div.product div.images {
+    width: 75vw;
+    height: 100vh;
+}
+
+.woocommerce #content div.product div.summary, .woocommerce div.product div.summary, .woocommerce-page #content div.product div.summary, .woocommerce-page div.product div.summary {
+    width: 25vw;
+}
+
+.woocommerce div.product .product_title {
+    margin-top: 200px;
+    margin-left: 15px;
+}
+
+.woocommerce .product p {
+    margin-left: 15px;
 }
 
 /*--------------------------------------------------------------
