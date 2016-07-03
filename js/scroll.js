@@ -95,5 +95,5 @@ $(".woocommerce-LoopProduct-link").on("click" ,function(){
     $(id).css("display", "block");
     $('html, body').animate({
         scrollTop: $(id).offset().top
-    }, 1000);
+    }, 500);
 });
