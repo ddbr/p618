@@ -1259,6 +1259,11 @@ img.attachment-shop_catalog.size-shop_catalog.wp-post-image {
 
 .woocommerce .product {
     display: none;
+		opacity: 0;
+}
+.woocommerce .product.show {
+    display: block;
+    opacity: 1;
 }
 
 .woocommerce .summary.entry-summary {

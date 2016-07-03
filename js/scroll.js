@@ -91,8 +91,8 @@ $(".product_preview-button.left").on("click" ,function(){
 
 $(".woocommerce-LoopProduct-link").on("click" ,function(){
     var id = $(this).attr('product_id');
-    $(".woocommerce .product").css("display", "none");
-    $(id).css("display", "block");
+    $(".woocommerce .product").removeClass( "show" );
+    $(id).addClass("show");
     $('html, body').animate({
         scrollTop: $(id).offset().top
     }, 500);
