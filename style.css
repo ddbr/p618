@@ -1270,23 +1270,36 @@ img.attachment-shop_catalog.size-shop_catalog.wp-post-image {
     display: block;
 }
 
-.woocommerce #content div.product div.images, .woocommerce div.product div.images, .woocommerce-page #content div.product div.images, .woocommerce-page div.product div.images {
-    width: 75vw;
-    height: 100vh;
-}
-
-.woocommerce #content div.product div.summary, .woocommerce div.product div.summary, .woocommerce-page #content div.product div.summary, .woocommerce-page div.product div.summary {
-    width: 25vw;
-}
-
 .woocommerce div.product .product_title {
     margin-top: 200px;
     margin-left: 15px;
 }
 
-.woocommerce .product p {
+.woocommerce .product p, .woocommerce .product span {
     margin-left: 15px;
 }
+
+.woocommerce .product .images:before{
+		content: "";
+		display: inline-block;
+		height: 100%;
+		vertical-align: middle;
+}
+.woocommerce #content div.product div.images{
+        width: 66vw;
+        height: 100vh;
+}
+
+.woocommerce #content div.product div.summary{
+        width: 33vw;
+        height: 100vh;
+}
+
+.woocommerce .woocommerce-main-image {
+	    display: inline-block;
+    	vertical-align: middle;
+}
+
 
 /*--------------------------------------------------------------
 # Admin Bar
