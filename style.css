@@ -1288,6 +1288,7 @@ img.attachment-shop_catalog.size-shop_catalog.wp-post-image {
 .woocommerce #content div.product div.images{
         width: 66vw;
         height: 100vh;
+    		white-space: nowrap;
 }
 
 .woocommerce #content div.product div.summary{
