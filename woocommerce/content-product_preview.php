@@ -28,7 +28,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 }
 $product_hash = "#product-" . $product->id;
 
-echo '<a href="#“ product_id=”' . $product_hash . '" class="woocommerce-LoopProduct-link">';
+echo '<a href="#" product_id="' . $product_hash . '" class="woocommerce-LoopProduct-link">';
 do_action( 'woocommerce_before_shop_loop_item_title' );
 echo '</a>';
 
