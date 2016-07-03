@@ -26,9 +26,9 @@ global $product;
 if ( empty( $product ) || ! $product->is_visible() ) {
 	return;
 }
-$call_display_function = "#" . $product->id;
+$product_hash = "#product-" . $product->id;
 
-echo '<a href="' . $call_display_function . '" class="woocommerce-LoopProduct-link">';
+echo '<a href="#“ product_id=”' . $product_hash . '" class="woocommerce-LoopProduct-link">';
 do_action( 'woocommerce_before_shop_loop_item_title' );
 echo '</a>';
 
