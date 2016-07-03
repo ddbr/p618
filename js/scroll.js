@@ -90,8 +90,8 @@ $(".product_preview-button.left").on("click" ,function(){
 });
 
 $(".woocommerce-LoopProduct-link").on("click" ,function(){
-    var id = $("this").attr('product_id');
-    $(".woocommerce-LoopProduct-link").css("display", "none");
+    var id = $(this).attr('product_id');
+    $(".woocommerce .product").css("display", "none");
     $(id).css("display", "block");
     $('html, body').animate({
         scrollTop: $(id).offset().top
