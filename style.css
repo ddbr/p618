@@ -1118,6 +1118,8 @@ img#corporate_logo {
 		margin: 0px 0px 0px 0px;
 		display: inline-block;
 		vertical-align: bottom;
+		position: relative !important;
+		clip: auto  !important;
 }
 
 /* Fixed header */
