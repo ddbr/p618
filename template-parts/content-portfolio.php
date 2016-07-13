@@ -17,7 +17,7 @@
 			$src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 5600,1000 ), false, '' );
 			echo "<div class='featured-img' style='background-image: url( " . $src[0] . " ) !important;'>&nbsp;</div>";
 		}
-		echo "<div class='featured-logo' style='background-image: url( http://test.projekt619.ch/wp-content/uploads/2016/04/logo-p619.png ) !important;'>&nbsp;</div>";
+		echo "<div class='featured-logo' style='background-image: url( https://test.projekt619.ch/wp-content/uploads/2016/04/logo-p619.png ) !important;'>&nbsp;</div>";
 		//the_title( '<h1 class="entry-title">', '</h1>' );
 		?>
 		<div class="down-arrow"></div>
