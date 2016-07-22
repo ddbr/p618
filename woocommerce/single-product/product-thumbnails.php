@@ -25,7 +25,7 @@ if ( $attachment_ids ) {
 	$columns 	= apply_filters( 'woocommerce_product_thumbnails_columns', 3 );
 
 		foreach ( $attachment_ids as $attachment_id ) {
-			$classes = array( 'zoom' );
+			$classes = array( 'zoom p619-gallery' );
 			if ( $loop === 0 || $loop % $columns === 0 )
 				$classes[] = 'first';
 			if ( ( $loop + 1 ) % $columns === 0 )
