@@ -40,10 +40,8 @@ if ( $attachment_ids ) {
 				'title'	=> $image_title,
 				'alt'	=> $image_title
 				) );*/
-			$image_url = wp_get_attachment_url( $attachment_id );
-			$image = sprintf( '<div style="background-image: url(%s)"></div>', $image_url);
 			$image_class = esc_attr( implode( ' ', $classes ) );
-			echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', sprintf( '<a href="%s" class="%s" title="%s" data-rel="prettyPhoto[product-gallery]">%s</a>', $image_link, $image_class, $image_caption, $image ), $attachment_id, $post->ID, $image_class );
+			echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', sprintf( '<a href="%s" class="%s" title="%s" data-rel="prettyPhoto[product-gallery]"><div style="background-image: url(%s)"></div></a>', $image_link, $image_class, $image_caption, $image_link ), $attachment_id, $post->ID, $image_class );
 			$loop++;
 		}
 }
