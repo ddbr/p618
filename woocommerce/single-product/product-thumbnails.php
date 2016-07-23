@@ -41,7 +41,7 @@ if ( $attachment_ids ) {
 				'alt'	=> $image_title
 				) );*/
 			$image_url = wp_get_attachment_url( $attachment_id );
-			$image = sprintf( '<div style="background-image: url(%s)"</div>', $image_url);
+			$image = sprintf( '<div style="background-image: url(%s)"></div>', $image_url);
 			$image_class = esc_attr( implode( ' ', $classes ) );
 			echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', sprintf( '<a href="%s" class="%s" title="%s" data-rel="prettyPhoto[product-gallery]">%s</a>', $image_link, $image_class, $image_caption, $image ), $attachment_id, $post->ID, $image_class );
 			$loop++;
