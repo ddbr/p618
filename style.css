@@ -1274,11 +1274,11 @@ img.attachment-shop_catalog.size-shop_catalog.wp-post-image {
 
 .woocommerce div.product .product_title {
     margin-top: 200px;
-    margin-left: 15px;
+    margin-left: 10%;
 }
 
 .woocommerce .product p, .woocommerce .product span {
-    margin-left: 15px;
+    margin-left: 10%;
 }
 
 .woocommerce .product .images:before{
@@ -1313,7 +1313,6 @@ img.attachment-shop_catalog.size-shop_catalog.wp-post-image {
     }
     .woocommerce div.product .product_title {
         margin-top: 0px;
-        margin-left: 10%;
     }
     .woocommerce #content div.product div.images {
         width: 100%;
