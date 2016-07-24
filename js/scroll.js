@@ -97,5 +97,5 @@ $(".woocommerce-LoopProduct-link").on("click" ,function(){
         scrollTop: $(id).offset().top
     }, 500);
     $(".zoom.top").removeClass("top")
-    $(id + " .zoom").get(0).addClass("top");
+    $($(id + " .zoom").get(0)).addClass("top");
 });
