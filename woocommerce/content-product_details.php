@@ -61,7 +61,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			 */
 			do_action( 'woocommerce_single_product_summary' );
 		?>
-    <a class="p619_overview">zurück zur Übersicht</a>
+    <a href="#content" class="p619_overview">Zurück zur Übersicht</a>
 
 	</div><!-- .summary -->
 
