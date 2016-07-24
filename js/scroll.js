@@ -89,25 +89,26 @@ $(".product_preview-button.left").on("click" ,function(){
     });
 });
 
-var imgInterval;
+var p619_img_Interval;
+var p619_product_id;
 $(".woocommerce-LoopProduct-link").on("click" ,function(){
-    var id = $(this).attr('product_id');
-    clearInterval(imgInterval);
+    p619_product_id = $(this).attr('product_id');
     $(".woocommerce .product").removeClass( "show" );
-    $(id).addClass("show");
+    $(p619_product_id).addClass("show");
     $('html, body').animate({
-        scrollTop: $(id).offset().top
+        scrollTop: $(p619_product_id).offset().top
     }, 500);
     $(".zoom.top").removeClass("top")
-    $($(id + " .zoom").get(0)).addClass("top");
-    imgInterval = setInterval(function(){ next(); }, 5000);
+    $($(p619_product_id + " .zoom").get(0)).addClass("top");
+    clearInterval(p619_img_Interval);
+    p619_img_Interval = setInterval(function(){ next(); }, 5000);
 
     function next() {
-      if ( $(id + " .zoom.top").next().is('a') ) {
-        $(id + " .zoom.top").removeClass("top").next().addClass("top");
+      if ( $(p619_product_id + " .zoom.top").next().is('a') ) {
+        $(p619_product_id + " .zoom.top").removeClass("top").next().addClass("top");
       } else {
-        $(id + " .zoom.top").removeClass("top");
-        $($(id + " .zoom").get(0)).addClass("top");
+        $(p619_product_id + " .zoom.top").removeClass("top");
+        $($(p619_product_id + " .zoom").get(0)).addClass("top");
       }
     }
 });
