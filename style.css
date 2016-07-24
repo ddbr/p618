@@ -1294,9 +1294,35 @@ img.attachment-shop_catalog.size-shop_catalog.wp-post-image {
 }
 
 .woocommerce #content div.product div.summary{
-        width: 25vw;
+        width: 400px;
         height: 100vh;
+				position: absolute;
+		    right: 0px;
+		    z-index: 30;
+		    background-color: white;
 }
+@media (max-width:780px){
+    .woocommerce #content div.product div.summary {
+        width: 100%;
+        height: auto;
+        position: relative;
+        right: initial;
+    }
+    .woocommerce div.product .product_title {
+        margin-top: 0px;
+        margin-left: 10%;
+    }
+    .woocommerce #content div.product div.images {
+        width: 100%;
+        height: 100vw;
+        white-space: nowrap;
+        overflow: hidden;
+        position: relative;
+    }
+}
+
+
+
 
 .woocommerce .woocommerce-main-image {
 	    display: inline-block;
@@ -1334,7 +1360,8 @@ img.attachment-shop_catalog.size-shop_catalog.wp-post-image {
     transition: opacity 2s;
 }
 .woocommerce #content div.product div.images {
-    width: 75vw;
+    width: calc(100vw - 400px);
+		width: 75vw; //fallback calc
     height: 100vh;
     white-space: nowrap;
     overflow: hidden;
