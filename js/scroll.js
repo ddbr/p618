@@ -98,4 +98,14 @@ $(".woocommerce-LoopProduct-link").on("click" ,function(){
     }, 500);
     $(".zoom.top").removeClass("top")
     $($(id + " .zoom").get(0)).addClass("top");
+    setInterval(function(){ next(); }, 3000);
+
+    fucntion next() {
+      if ( $(id + " .zoom.top").removeClass("top").next() ) {
+        $(id + " .zoom.top").removeClass("top").next().addClass("top");
+      } else {
+        $(id + " .zoom.top").removeClass("top");
+        $($(id + " .zoom").get(0)).addClass("top");
+      }
+    }
 });
