@@ -1290,7 +1290,7 @@ img.attachment-shop_catalog.size-shop_catalog.wp-post-image {
 
 .woocommerce #content div.product div.images {
     width: calc(100vw - 400px);
-		width: 75vw; //fallback calc
+		width: 75vw; /* fallback calc */
     height: 100vh;
     white-space: nowrap;
     overflow: hidden;
