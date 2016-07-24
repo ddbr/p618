@@ -1307,8 +1307,11 @@ img.attachment-shop_catalog.size-shop_catalog.wp-post-image {
 # Gallery Bar
 --------------------------------------------------------------*/
 
-.woocommerce #content div.product .zoom {
-
+.woocommerce #content div.product .zoom div {
+		width: 100%;
+		height:100%;
+		background-position: center;
+		background-size: cover;
 }
 
 .woocommerce #content div.product .zoom {
@@ -1319,7 +1322,7 @@ img.attachment-shop_catalog.size-shop_catalog.wp-post-image {
     opacity: 0;
     -webkit-transition: opacity 2s; /* Safari */
     transition: opacity 2s;
-    width: 100%
+    width: 100%;
 		height: 100%;
     text-align: center;
     /* overflow: hidden; */
