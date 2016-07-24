@@ -101,7 +101,8 @@ $(".woocommerce-LoopProduct-link").on("click" ,function(){
     setInterval(function(){ next(); }, 3000);
 
     function next() {
-      if ( $(id + " .zoom.top").removeClass("top").next() ) {
+      alert(id);
+      if ( $(id + " .zoom.top").next() ) {
         $(id + " .zoom.top").removeClass("top").next().addClass("top");
       } else {
         $(id + " .zoom.top").removeClass("top");
