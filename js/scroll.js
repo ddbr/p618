@@ -91,6 +91,8 @@ $(".product_preview-button.left").on("click" ,function(){
 
 $(".woocommerce-LoopProduct-link").on("click" ,function(){
     var id = $(this).attr('product_id');
+    var imgInterval;
+    clearInterval(imgInterval);
     $(".woocommerce .product").removeClass( "show" );
     $(id).addClass("show");
     $('html, body').animate({
@@ -98,8 +100,8 @@ $(".woocommerce-LoopProduct-link").on("click" ,function(){
     }, 500);
     $(".zoom.top").removeClass("top")
     $($(id + " .zoom").get(0)).addClass("top");
-    setInterval(function(){ next(); }, 5000);
-
+    imgInterval = setInterval(function(){ next(); }, 5000);
+    
     function next() {
       if ( $(id + " .zoom.top").next().is('a') ) {
         $(id + " .zoom.top").removeClass("top").next().addClass("top");
