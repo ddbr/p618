@@ -148,6 +148,10 @@ h1 {
 	margin-top: 0.67em;
 	margin-bottom: 0.67em;
 }
+.entry-header h1 {
+	font-size: 5em;
+	letter-spacing: 4px;
+}
 
 mark {
 	background: #ff0;
