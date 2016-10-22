@@ -322,6 +322,7 @@ h6 {
 	clear: both;
 	margin-left: 10%;
 	margin-right: 10%;
+	line-height: 1.35em;
 }
 
 p {
@@ -976,6 +977,7 @@ ol.comment-list {
     margin-right: 10%;
 }
 
+
 /*--------------------------------------------------------------
 ## Asides
 --------------------------------------------------------------*/
@@ -1222,6 +1224,10 @@ nav.woocommerce-breadcrumb, form.woocommerce-ordering, .woocommerce-result-count
     width: 100%;
     overflow: scroll;
     height: 50vh;
+}
+
+.woocommerce .product_meta {
+	display: none;
 }
 
 a.woocommerce-LoopProduct-link {
