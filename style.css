@@ -1122,6 +1122,17 @@ img#corporate_logo {
 		clip: auto  !important;
 }
 
+.woocommerce .entry-header .entry-title,
+.page-template-default .entry-header .entry-title{
+    margin: 0;
+    position: absolute;
+    top: 20vh;
+    width: 100%;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+
 /* Fixed header */
 header#masthead {
 		z-index: 99999;
@@ -1199,15 +1210,6 @@ img#corporate_logo {
 --------------------------------------------------------------*/
 nav.woocommerce-breadcrumb, form.woocommerce-ordering, .woocommerce-result-count {
     display: none;
-}
-.woocommerce .entry-header .entry-title {
-    margin: 0;
-    position: absolute;
-    top: 20vh;
-    width: 100%;
-    text-align: center;
-    color: white;
-    text-transform: uppercase;
 }
 
 .woocommerce .product_preview-container {
