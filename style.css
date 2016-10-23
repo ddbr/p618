@@ -1409,3 +1409,20 @@ div#wpadminbar {
 div#wpadminbar:hover {
     opacity: 1;
 }
+
+/*--------------------------------------------------------------
+# 768x1024
+--------------------------------------------------------------*/
+@media screen and (max-width: 1024px) {
+
+	.woocommerce img, .woocommerce-page img {
+		max-width: initial;
+	}
+	.entry-header h1 {
+    font-size: 2.5em;
+	}
+	h1 {
+    font-size: 1.7em;
+}
+
+}
