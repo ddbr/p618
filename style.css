@@ -1355,23 +1355,25 @@ img.attachment-shop_catalog.size-shop_catalog.wp-post-image {
     .woocommerce #content div.product div.summary {
         width: 100%;
         height: auto;
+				min-height: 40vh;
         position: relative;
         right: initial;
+				padding-top: 2em;
     }
     .woocommerce div.product .product_title {
         margin-top: 0px;
     }
     .woocommerce #content div.product div.images {
         width: 100%;
-        height: 100vw;
+        height: 60vh;
         white-space: nowrap;
         overflow: hidden;
         position: relative;
-				margin-bottom: 2em;
+				margin-bottom: 0em;
     }
 		.woocommerce a.p619_overview {
-			position:relative;
-			margin-top:2em
+			width: 100%;
+	    text-align: right;
 	 	}
 }
 
