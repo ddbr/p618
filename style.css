@@ -147,6 +147,7 @@ h1 {
 	font-size: 2em;
 	margin-top: 0.67em;
 	margin-bottom: 0.67em;
+	text-transform: uppercase;
 }
 .entry-header h1 {
 	font-size: 5em;
