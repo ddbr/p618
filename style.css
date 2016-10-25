@@ -1315,24 +1315,6 @@ img.attachment-shop_catalog.size-shop_catalog.wp-post-image {
 		    z-index: 30;
 		    background-color: white;
 }
-@media (max-width:780px){
-    .woocommerce #content div.product div.summary {
-        width: 100%;
-        height: auto;
-        position: relative;
-        right: initial;
-    }
-    .woocommerce div.product .product_title {
-        margin-top: 0px;
-    }
-    .woocommerce #content div.product div.images {
-        width: 100%;
-        height: 100vw;
-        white-space: nowrap;
-        overflow: hidden;
-        position: relative;
-    }
-}
 
 .woocommerce .woocommerce-main-image {
 	    display: inline-block;
@@ -1352,6 +1334,7 @@ img.attachment-shop_catalog.size-shop_catalog.wp-post-image {
     display: block;
     overflow: hidden;
     text-decoration: none;
+		float:right;
 }
 
 .woocommerce a.p619_overview:before {
@@ -1366,6 +1349,32 @@ img.attachment-shop_catalog.size-shop_catalog.wp-post-image {
     background-repeat: no-repeat;
     background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/PjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDIwMC4zODcgMjAwLjM4NyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjAwLjM4NyAyMDAuMzg3OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGc+PGc+PGc+PHBvbHlnb24gc3R5bGU9ImZpbGw6IzAxMDAwMjsiIHBvaW50cz0iNS41MDQsMTU0LjQ0OSAwLDE0OS4xMDIgMTAwLjE5Nyw0NS45MzggMjAwLjM4NywxNDkuMTAyIDE5NC44OTMsMTU0LjQ0OSAxMDAuMTk3LDU2Ljk0NyAiLz48L2c+PC9nPjxwb2x5Z29uIHN0eWxlPSJmaWxsOiMwMTAwMDI7IiBwb2ludHM9IjEwMC4xOTcsNDUuOTM4IDAsMTQ5LjEwMiA1LjUwNCwxNTQuNDQ5IDEwMC4xOTcsNTYuOTQ3IDE5NC44OTMsMTU0LjQ0OSAyMDAuMzg3LDE0OS4xMDIgIi8+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjwvc3ZnPg==);
 }
+
+
+@media (max-width:780px){
+    .woocommerce #content div.product div.summary {
+        width: 100%;
+        height: auto;
+        position: relative;
+        right: initial;
+    }
+    .woocommerce div.product .product_title {
+        margin-top: 0px;
+    }
+    .woocommerce #content div.product div.images {
+        width: 100%;
+        height: 100vw;
+        white-space: nowrap;
+        overflow: hidden;
+        position: relative;
+				margin-bottom: 2em;
+    }
+		.woocommerce a.p619_overview {
+			position:relative;
+			margin-top:2em
+	 	}
+}
+
 
 /*--------------------------------------------------------------
 # Gallery Bar
@@ -1401,7 +1410,7 @@ img.attachment-shop_catalog.size-shop_catalog.wp-post-image {
 	display:none;
 }
 .woocommerce div.product div.images, .woocommerce div.product div.summary {
-    margin-bottom: 0em;
+    margin-bottom: 2em;
 }
 .woocommerce .products ul, .woocommerce ul.products {
     margin: 0;
