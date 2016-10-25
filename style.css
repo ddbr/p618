@@ -1351,7 +1351,7 @@ img.attachment-shop_catalog.size-shop_catalog.wp-post-image {
 }
 
 
-@media (max-width:780px){
+@media (max-width:780px), (max-aspect-ratio: 1000/1000){
     .woocommerce #content div.product div.summary {
         width: 100%;
         height: auto;
