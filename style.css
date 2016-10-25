@@ -1455,3 +1455,8 @@ div#wpadminbar:hover {
 }
 
 }
+@media screen and (max-width: 780px) {
+	.panel-grid-cell:first-child.panel-grid-cell:last-child .back {
+			padding-top: 50% !important
+	}
+}
