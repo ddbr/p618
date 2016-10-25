@@ -1359,6 +1359,8 @@ img.attachment-shop_catalog.size-shop_catalog.wp-post-image {
         position: relative;
         right: initial;
 				padding-top: 2em;
+				padding-bottom: 5em;
+				margin-bottom: 0;
     }
     .woocommerce div.product .product_title {
         margin-top: 0px;
