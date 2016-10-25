@@ -1301,7 +1301,6 @@ img.attachment-shop_catalog.size-shop_catalog.wp-post-image {
 }
 
 .woocommerce #content div.product div.images {
-    width: calc(100vw - 400px);
 		width: 75vw; /* fallback calc */
     height: 100vh;
     white-space: nowrap;
@@ -1309,7 +1308,7 @@ img.attachment-shop_catalog.size-shop_catalog.wp-post-image {
     position: relative;
 }
 .woocommerce #content div.product div.summary{
-        width: 400px;
+        width: 30vw;
         height: 100vh;
 				position: absolute;
 		    right: 0px;
@@ -1398,7 +1397,15 @@ img.attachment-shop_catalog.size-shop_catalog.wp-post-image {
     -webkit-transition: opacity 2s; /* Safari */
     transition: opacity 2s;
 }
-
+.woocommerce .footer {
+	display:none;
+}
+.woocommerce div.product div.images, .woocommerce div.product div.summary {
+    margin-bottom: 0em;
+}
+.woocommerce .products ul, .woocommerce ul.products {
+    margin: 0;
+}
 
 /*--------------------------------------------------------------
 # Admin Bar
