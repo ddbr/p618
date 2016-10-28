@@ -949,7 +949,7 @@ header.entry-header .down-arrow {
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
-    bottom: 0;
+    bottom: 2vh;
     content: "";
     display: block;
     height: 3vw;
@@ -1367,6 +1367,9 @@ img.attachment-shop_catalog.size-shop_catalog.wp-post-image {
 				padding-bottom: 5em;
 				margin-bottom: 0;
     }
+		header.entry-header .down-arrow {
+			    height: 6vh;
+		}
     .woocommerce div.product .product_title {
         margin-top: 0px;
     }
