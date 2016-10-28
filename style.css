@@ -1223,7 +1223,9 @@ nav.woocommerce-breadcrumb, form.woocommerce-ordering, .woocommerce-result-count
     display: block;
     white-space: nowrap;
     width: 100%;
-    overflow: scroll;
+		overflow-y: hidden;
+		overflow-x: scroll;
+		-webkit-overflow-scrolling: touch;
     height: 50vh;
 }
 
@@ -1472,7 +1474,7 @@ a.woocommerce-LoopProduct-link:after {
     height: 6vh;
     display: inline-block;
     position: relative;
-    bottom: 2vh;
+    bottom: 10vh;
     left: -8vh;
     content:"";
     background-size: 2.5vh;
