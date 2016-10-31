@@ -101,7 +101,7 @@ $(".woocommerce-LoopProduct-link").on("click" ,function(){
     $(".zoom.top").removeClass("top")
     $($(p619_product_id + " .zoom").get(0)).addClass("top");
     clearInterval(p619_img_Interval);
-    p619_img_Interval = setInterval(function(){ next(); }, 3000);
+    p619_img_Interval = setInterval(function(){ next(); }, 2500);
 
     function next() {
       if ( $(p619_product_id + " .zoom.top").next().is('a') ) {
