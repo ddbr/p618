@@ -16,14 +16,14 @@
      didScroll = true;
  }*/
  // resize event
- window.onresize = flagOnResize;
+ $( window ).onresize = flagOnResize;
  function flagOnResize() {
      didResize = true;
- }
- window.onload = winOnLoad;
+ };
+$( window ).onload = winOnLoad;
  function winOnLoad() {
     $('.featured-img').trigger('resize');
- }
+ };
 
  // Scrolling check interval function 100ms
  setInterval(function() {
