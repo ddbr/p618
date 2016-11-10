@@ -16,10 +16,10 @@
      didScroll = true;
  }*/
  // resize event
- window.onresize = flagOnResize;
+ /*window.onresize = flagOnResize;
  function flagOnResize() {
      didResize = true;
- }
+ }*/
  window.onload = winOnLoad;
  function winOnLoad() {
     $('.featured-img').trigger('resize');
