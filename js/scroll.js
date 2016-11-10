@@ -11,22 +11,22 @@
  var prdScroll = 0;
 
  // scrolling event
- /*window.onscroll = flagOnScroll;
+ window.onscroll = flagOnScroll;
  function flagOnScroll() {
      didScroll = true;
- }*/
+ }
  // resize event
- $( window ).resize = flagOnResize;
+ /*$( window ).resize = flagOnResize;
  function flagOnResize() {
      didResize = true;
- };
-$( window ).load = winOnLoad;
+ };*/
+window.onload = winOnLoad;
  function winOnLoad() {
     $('.featured-img').trigger('resize');
  };
 
  // Scrolling check interval function 100ms
- setInterval(function() {
+ /*setInterval(function() {
      if(didScroll) {
          didScroll = false;
          $('#masthead').trigger('scrolled');
@@ -35,7 +35,7 @@ $( window ).load = winOnLoad;
          didResize = false;
          $('.featured-img').trigger('resize');
      }
- }, 100);
+ }, 100);*/
 
 $(".featured-img").bind('resize', function() {
   var img_height = $( window ).height() - $(".featured-img").offset().top;
