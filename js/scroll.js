@@ -18,8 +18,7 @@
  // resize event
  window.onresize = flagOnResize;
  function flagOnResize() {
-     //didResize = true;
-     $('.featured-img').trigger('resize');
+     didResize = true;
  }
  window.onload = winOnLoad;
  function winOnLoad() {
