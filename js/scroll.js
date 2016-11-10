@@ -22,7 +22,7 @@
  };*/
  $( window ).resize(function() {
    didResize = true;
- };
+ });
 window.onload = winOnLoad;
  function winOnLoad() {
     $('.featured-img').trigger('resize');
