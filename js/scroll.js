@@ -26,7 +26,7 @@ window.onload = winOnLoad;
  };
 
  // Scrolling check interval function 100ms
- /*setInterval(function() {
+ setInterval(function() {
      if(didScroll) {
          didScroll = false;
          $('#masthead').trigger('scrolled');
@@ -35,20 +35,20 @@ window.onload = winOnLoad;
          didResize = false;
          $('.featured-img').trigger('resize');
      }
- }, 100);*/
+ }, 100);
 
 $(".featured-img").bind('resize', function() {
   var img_height = $( window ).height() - $(".featured-img").offset().top;
   $(".featured-img").height(img_height / 2);
   $(".page-template-page-portfolio .featured-img").height(img_height);
 });
-/*
+
 $("#masthead").bind('scrolled', function() {
   if( scrollCnt < 5) {
     scrollCnt++;
   }
   if( !$( this ).hasClass('toggled') && scrollCnt > 4 ){
-    container = document.getElementById( 'masthead' ); /* main-navigation *//*
+    container = document.getElementById( 'masthead' ); /* main-navigation */
   	if ( ! container ) {
   		return;
   	}
@@ -68,7 +68,7 @@ $("#masthead").bind('scrolled', function() {
     menu.setAttribute( 'aria-expanded', 'true' );
     scrollCnt = 0;
   }
-});*/
+});
 
 $(".product_preview-button").bind('resize', function() {
   var x = $(window).width() / 6;
