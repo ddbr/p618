@@ -11,10 +11,10 @@
  var prdScroll = 0;
 
  // scrolling event
- window.onscroll = flagOnScroll;
+ /*window.onscroll = flagOnScroll;
  function flagOnScroll() {
      didScroll = true;
- }
+ }*/
  // resize event
  window.onresize = flagOnResize;
  function flagOnResize() {
